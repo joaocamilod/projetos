@@ -1,0 +1,248 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+    color: #EFEFEF;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #802d69;
+    color: #EFEFEF;
+    width: 100%;
+    padding-bottom: 0.4em;
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+
+.ul1{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.ul2{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0em 0em 0em;
+
+}
+li :hover{
+    text-decoration: underline 0.1em;
+}
+.logo{
+    width: 13%;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    height: 5em;
+    padding: 1em 0em 0em 0em;
+    margin-top: 50px;
+}
+nav{
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 50px;
+}
+.h1logo{
+    text-align: center;
+    font-family: 'Black Pastel', sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: normal;
+}
+.nav2{
+    width: 20%;
+    margin: 60px;
+    gap: 30px;
+}
+
+.icone{
+    height: 2em;
+    margin-bottom: 50px;
+}
+
+
+.page-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 55px;
+    font-size: 40px;
+    font-weight: 5;
+}
+
+.product-categories {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.category {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #802d69;
+    background: none;
+    transition: background-color 0.3s ease, color 0.3 ease;
+}
+
+.category h2 {
+    text-align: center;
+    font-size: 16px;
+    color: #802d69;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.category:clicked {
+    background-color: #802d69;
+    color: white;
+}
+
+.category:active {
+    background-color: #802d69;
+    color: white;
+}
+
+.category:hover {
+    box-shadow: 7px 5px 56px -14px #802d69;
+}
+
+.category:clicked h2 {
+    color: white;
+}
+
+/* Estilos para a barra de pesquisa */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #802d69;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #fff;
+    margin-top: 30px;
+    max-width: 300px;
+    margin: 55px;
+}
+
+.search-input {
+    flex: 1; /* Ocupa todo o espaço disponível na barra de pesquisa */
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none; /* Remove a borda de foco ao clicar */
+}
+
+/* Estilo para o ícone de lupa no botão de busca */
+.search-icon {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.search-button {
+    background-color: #800080;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.product-box {
+    text-align: center;
+    background-color: #efefef;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease;
+}
+
+.product-box:hover {
+    transform: scale(1.05);
+}
+
+.product-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-box h3 {
+    padding: 10px;
+    text-align: left;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+}
+
+.product-box p {
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    background: #a95393;
+    display: flex;
+    font-family: 'Montserrat';
+    color: #EFEFEF;
+}
+footer img{
+    height: 20em;
+}
+.divfooter{
+    display: flex;
+    flex-direction: column;
+    padding: 0em 0em 0em 2em;
+}
+.sobrenos{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contato{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.foot{
+    color: #EFEFEF;
+    font-size: 1.3em;
+}
