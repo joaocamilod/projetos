@@ -20,19 +20,21 @@ header{
     padding-bottom: 0.4em;
     font-family: 'Montserrat';
     font-size: 15px;
+    flex-wrap: wrap; /* Allow header elements to wrap */
 }
 
 .ul1{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .ul2{
     list-style: none;
     display: flex;
     justify-content: space-around;
     margin: 2em 0em 0em 0em;
-
+    flex-wrap: wrap;
 }
 li :hover{
     text-decoration: underline 0.1em;
@@ -51,6 +53,7 @@ nav{
     width: 67%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allow nav elements to wrap */
 }
 .nav1{
     text-align: center;
@@ -221,6 +224,7 @@ footer{
     display: flex;
     font-family: 'Montserrat';
     color: #EFEFEF;
+    flex-wrap: wrap; /* Allow footer elements to wrap */
 }
 footer img{
     height: 20em;
@@ -245,4 +249,58 @@ footer img{
 .foot{
     color: #EFEFEF;
     font-size: 1.3em;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+    .logo {
+        width: 100%;
+    }
+    .logo img {
+        margin-top: 0;
+    }
+    nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav1, .nav2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .page-title {
+        margin: 20px 0;
+        font-size: 24px;
+    }
+    .product-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+    .category {
+        width: 80%;
+        margin: 10px 0;
+    }
+    .search-container {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+    footer img {
+        height: 10em;
+    }
+    .divfooter {
+        padding: 1em 0;
+    }
 }
